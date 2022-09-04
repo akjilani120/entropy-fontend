@@ -20,10 +20,10 @@ const Entertainment = () => {
                             <Card.Img className='img-card' variant="top" src={d.img} />
                             <Card.Body>
                                 <Card.Title>{d.name}</Card.Title>
-                                <Card.Text>
+                                <Card.Text className='text-justify'>
                                     {d.title.slice(0, 100)}
                                 </Card.Text>
-                                <button className='btn btn-primary'>Show more</button>
+                                <button className='btn btn-primary my-2'>Show more</button>
                             </Card.Body>
                             
                         </Card>

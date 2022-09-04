@@ -27,6 +27,43 @@ const Home = () => {
     const handleShow = () => setShow(true);
     return (
         <div>
+            <div className='d-flex justify-content-end'>
+               
+                  <div>
+                  <Button className='mx-5 my-3 px-5 lead py-2' variant="primary" onClick={handleShow}>
+                        Add Blog
+                    </Button>
+
+                    <Modal  show={show} onHide={handleClose}>
+                        <Modal.Header closeButton>
+                            <Modal.Title> Add Blog</Modal.Title>
+                        </Modal.Header>                        
+                        <Modal.Body className='blog-modal-body'>
+                        <form onSubmit={handleSubmit(onSubmit)}>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" className="form-label text-white">Name</label>
+                                    <input type="text" className='form-control' {...register("name")} required/>
+                                    <p className='text-danger'> {errors.name?.type === 'required' && "First name is required"}</p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" className="form-label text-white">About Text</label>
+                                    <input type="text" className='form-control' {...register("title")}  required />
+                                    <p className='text-danger'> {errors.title?.type === 'required' && "First name is required"}</p>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" className="form-label text-white">Image</label>
+                                    <input className='form-control' type='file' {...register("img")}   required/>
+                                </div>                              
+                            
+                              <div className='text-center'>
+                              <input className='btn btn-warning my-3 text-white px-4 py-2' type="submit"  value="Submit now"/>
+                              </div>
+                            </form>
+                        </Modal.Body>
+                    </Modal>
+                  </div>
+              
+            </div>
             <div>
                 <div className='d-flex justify-content-center'>
                     <ul className='d-flex sub-nav'>
@@ -39,49 +76,7 @@ const Home = () => {
             <div>
                 <Outlet />
             </div>
-            <div>
-                <>
-                    <Button variant="primary" onClick={handleShow}>
-                        Launch demo modal
-                    </Button>
-
-                    <Modal show={show} onHide={handleClose}>
-                        <Modal.Header closeButton>
-                            <Modal.Title>Modal heading</Modal.Title>
-                        </Modal.Header>
-                        <form onSubmit={handleSubmit(onSubmit)}>
-                        <Modal.Body>
-                            
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                    <input type="text" className='form-control' {...register("name")} />
-                                    <p className='text-danger'>{errors.name?.message}</p>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Title</label>
-                                    <input type="text" className='form-control' {...register("title")} />
-                                    <p className='text-danger'>{errors.title?.message}</p>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" class="form-label">Image</label>
-                                    <input className='form-control' type='file' {...register("img")} />
-                                </div>
-
-
-                           
-                        </Modal.Body>
-                        <Modal.Footer>
-                            <Button variant="secondary" onClick={handleClose}>
-                                Close
-                            </Button>
-                            <Button variant="primary" >
-                            <input type="submit"  value="submit now"/>
-                            </Button>
-                        </Modal.Footer>
-                        </form>
-                    </Modal>
-                </>
-            </div>
+            
         </div>
     );
 };
