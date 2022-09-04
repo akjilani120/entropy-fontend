@@ -1,0 +1,12 @@
+.sub-nav {
+   margin:30px auto ;
+}
+.sub-nav li {
+    list-style: none;
+  
+}
+.link-item{
+    font-size: 18px;
+    border: 1px solid rgb(255, 65, 141);
+    font-family: 'Poppins', sans-serif;
+}
