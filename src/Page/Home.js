@@ -5,11 +5,20 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import './Home.css'
 const Home = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const [ blog , setBlog] = useState("")
+    const { register, reset, handleSubmit, formState: { errors } } = useForm();
+   
+    const handleSelect =(e) =>{
+     setBlog(e.target.value)
+    }
     const imgStorageKey = 'a20408031904de293b263e5a8f8e5393'
     const onSubmit = data => {
+      
         const formData = new FormData();
         const image = data.img[0]
         formData.append('image', image);           
@@ -19,8 +28,42 @@ const Home = () => {
             body:formData
         })
         .then(res => res.json())
-        .then(result => console.log(result))
-        console.log(data)
+        
+        .then(result => {
+            if(result.success){
+                const blogType = blog
+                const name = data.name;
+                const title = data.title                
+                const img = result.data.url
+                const totalData ={
+                    blogType,
+                    name,
+                    title,
+                    img                    
+                }
+                fetch('http://localhost:5000/blog', {
+                    method:"POST",
+                    headers:{
+                        "content-type" : "application/json"
+                    },
+                    body: JSON.stringify(totalData)
+                })
+                .then(res => res.json())
+                .then(data =>{
+                    if(data){
+                        toast("Success , Send your data")
+                       
+                    }else{
+                        toast("not success ,donot Send your data")
+                    }
+                    reset()
+                    console.log("set data data" ,  data)
+                })
+         }
+    }
+        )
+   
+        
     };
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -40,6 +83,15 @@ const Home = () => {
                         </Modal.Header>                        
                         <Modal.Body className='blog-modal-body'>
                         <form onSubmit={handleSubmit(onSubmit)}>
+                                 <div class="mb-3">
+                                    <label for="exampleFormControlInput1" className="form-label text-white">Select Blog</label>
+                                     <select onChange={handleSelect}  className='form-select'  required>
+                                        <option value="Tech">Tech</option>
+                                        <option value="Entertainment">Entertainment</option>
+                                        <option value="Community">Community</option>
+                                     </select>                                   
+                                   
+                                </div>
                                 <div class="mb-3">
                                     <label for="exampleFormControlInput1" className="form-label text-white">Name</label>
                                     <input type="text" className='form-control' {...register("name")} required/>
@@ -76,7 +128,7 @@ const Home = () => {
             <div>
                 <Outlet />
             </div>
-            
+            <ToastContainer />
         </div>
     );
 };
