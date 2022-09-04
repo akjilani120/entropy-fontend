@@ -1,0 +1,108 @@
+[
+    {
+        "blogType" :"Tech",
+        "name" : "Laptop",
+        "title" : "A laptop, laptop computer, or notebook computer is a small, portable personal computer (PC) with a screen and alphanumeric keyboard. Laptops typically have a clam shell form factor with the screen mounted on the inside of the upper lid and the keyboard on the inside of the lower lid, although 2-in-1 PCs with a detachable keyboard are often marketed as laptops or as having a laptop mode",
+        "img" :"https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGxhcHRvcHxlbnwwfHwwfHw%3D&w=1000&q=80"
+        
+    },
+    {
+        "blogType" :"Tech",
+        "name" : "Phone",
+        "title" : "A mobile phone, cellular phone, cell phone, cellphone, handphone, hand phone or pocket phone, sometimes shortened to simply mobile, cell, or just phone, is a portable telephone that can make and receive calls over a radio frequency link while the user is moving within a telephone service area.",
+        "img" : "https://images.unsplash.com/photo-1565849904461-04a58ad377e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGhvbmV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        
+    },
+    {
+        "blogType" :"Tech",
+        "name" : "Computer",
+        "title" : "A computer, or notebook computer is a small, portable personal computer (PC) with a screen and alphanumeric keyboard. Laptops typically have a clam shell form factor with the screen mounted on the inside of the upper lid and the keyboard on the inside of the lower lid, although 2-in-1 PCs with a detachable keyboard are often marketed as laptops or as having a laptop mode",
+        "img" :"https://images.unsplash.com/photo-1551739440-5dd934d3a94a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNvbXB1dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        
+    },
+    {
+        "blogType" :"Tech",
+        "name" : "Camera",
+        "title" : "A camera is an optical instrument that captures a visual image. At a basic level, cameras consist of sealed boxes (the camera body), with a small hole (the aperture) that allows light through to capture an image on a light-sensitive surface (usually a digital sensor or photographic film). Cameras have various mechanisms to control how the light falls onto the light-sensitive surface. Lenses focus the light entering the camera.",
+        "img" :"https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FtZXJhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        
+    },
+    {
+        "blogType" :"Tech",
+        "name" : "Sound Box",
+        "title" : "A sound box or sounding box (sometimes written soundbox) is an open chamber in the body of a musical instrument which modifies the sound of the instrument, and helps transfer that sound to the surrounding air. Objects respond more strongly to vibrations at certain frequencies, known as resonances. ",
+        "img" :"https://images.unsplash.com/photo-1516575869513-3f418f8902ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c291bmQlMjBib3h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+        
+    },
+    {
+        "blogType" :"Entertainment",
+        "name" : "Dilwale ",
+        "title" : "Download dilwale-41 hd image and wallpapers from movie Dilwale 2015 at Bollywood ... Find latest movie hd images, Actors hot photo, Bollywood movie pics",
+        "img" :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5uWbbTveSkK1uOUtzcjjHXrzdF-ssMtczUxvpAgVkaQ&s"
+        
+    },
+    {
+        "blogType" :"Entertainment",
+        "name" : "3 Idiots",
+        "title" : "3 Idiots Photo Gallery - Check out 3 Idiots movie latest images, HD stills and download first look posters, actor & actress pictures, shooting spot photos ...",
+        "img" :"https://i.pinimg.com/236x/58/58/5d/58585d6284adf70525240fba5f4c5ff8--aamir-khan-indian-movies.jpg"
+        
+    },
+    {
+        "blogType" :"Entertainment",
+        "name" : "Dhoom 3",
+        "title" : "Dhoom 3 Photo Gallery - Check out Dhoom 3 movie latest images, HD stills and download first look posters, actor & actress pictures, shooting spot photos and ...",
+        "img" :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCwCAMefVeA-NhCccFGFl8rJnQHUK43FNC9u9a4IWR&s"
+        
+    },
+    {
+        "blogType" :"Entertainment",
+        "name" : "Kriss 3",
+        "title" : "Krrish 3 Photo Gallery - Check out Krrish 3 movie latest images, HD stills and download first look posters, actor & actress pictures, shooting spot photos ...",        
+        "img" :"https://m.media-amazon.com/images/M/MV5BMjI0MzU3MTM1Ml5BMl5BanBnXkFtZTgwOTk2MjQ0MDE@._V1_.jpg"
+        
+    },
+    {
+        "blogType" :"Entertainment",
+        "name" : "Titanic ",
+        "title" : "Check out this fantastic collection of Titanic Movie wallpapers, with 60 Titanic Movie background images for your desktop, phone or tablet.",
+        "img" :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPR0FDtnSJajRwM6sfr93mG42URBSxshlSy-pKGGg&s"
+        
+    },
+    {
+        "blogType" :"Community",
+        "name" : "Friend cercel Community",
+        "title" : "First of all I would like to say that you have to be a strong person, as in today's world being emotional really sucks. You have to be smart, and focus on your aim in life rather than seeking other's attention. Friends are nonetheless an important part of our lives, but at the end of everything you have to depend on yourself, not on your friends",
+        "img" :"https://image.shutterstock.com/image-vector/multiethnic-group-people-society-multicultural-260nw-1456013552.jpg"
+        
+    },
+    {
+        "blogType" :"Community",
+        "name" : "Social  Community",
+        "title" : "The community is a territorial group which shares a common soil as well as shared way of life. II is no accident that people concentrate at a particular place and cluster together. Nearness facilitates contact, furnishes projection and makes easier the organisation and integration of the group. People living in the same locality come to have a distinctive community life",
+        "img" :"https://thumbs.dreamstime.com/z/diverse-people-circle-community-concept-43888196.jpg"
+        
+    },
+    {
+        "blogType" :"Community",
+        "name" : "Family Community",
+        "title" : "Family lies at the heart of social life, an essential building block of communities and nations. But that simple, perhaps universal fact conceals enormous complexity. What is a family, and how should one be composed and operate? Who counts? In America, the answers to these questions have changed and stirred controversy, while the stakes have remained high. ",
+        "img" :"https://media.istockphoto.com/photos/friends-linking-arms-in-unity-picture-id1199706305?k=20&m=1199706305&s=612x612&w=0&h=uJShYZ2DBU6M_F1_oztFeocH0GVq2g94p6cak_I3z_M="
+        
+    },
+    {
+        "blogType" :"Community",
+        "name" : "International Community",
+        "title" : "A laptop, laptop computer, or notebook computer is a small, portable personal computer (PC) with a screen and alphanumeric keyboard. Laptops typically have a clam shell form factor with the screen mounted on the inside of the upper lid and the keyboard on the inside of the lower lid, although 2-in-1 PCs with a detachable keyboard are often marketed as laptops or as having a laptop mode",
+        "img" :"https://cdn.pixabay.com/photo/2014/07/08/10/47/team-386673__480.jpg"
+        
+    },
+    {
+        "blogType" :"Community",
+        "name" : "Politics Community",
+        "title" : "A laptop, laptop computer, or notebook computer is a small, portable personal computer (PC) with a screen and alphanumeric keyboard. Laptops typically have a clam shell form factor with the screen mounted on the inside of the upper lid and the keyboard on the inside of the lower lid, although 2-in-1 PCs with a detachable keyboard are often marketed as laptops or as having a laptop mode",
+        "img" :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwzh_uHe7_yoSZRmIWd3uRjG17QMdLRIqiv_BGhP7e&s"
+        
+    }
+   
+]
