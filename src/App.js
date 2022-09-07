@@ -8,6 +8,7 @@ import Home from './Page/Home';
 import Tech from './Page/Tech';
 
 function App() {
+  
   return (
     <div className="App">
      <Navabar/>

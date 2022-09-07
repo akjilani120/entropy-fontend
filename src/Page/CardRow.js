@@ -1,9 +1,23 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
-const CardRow = ({singleData}) => {
-    const {name , img , title , blogType} = singleData
-
+const CardRow = ({singleData , refetch }) => {
+    const {name , img , title , blogType , _id} = singleData
+   const hanleDelete =(id) =>{
+    const url =`http://localhost:5000/blog/delete/${id}`
+     fetch(url , {
+        method:"DELETE"
+     })
+     .then(res => res.json())
+     .then(data =>{
+         
+         refetch()
+        })
+     
+   }
+   const handleUpdate =(id) =>{
+     console.log("Update" , id)
+   }
     return (
         <Col>
                     <Card>
@@ -16,8 +30,8 @@ const CardRow = ({singleData}) => {
                                 </Card.Text>
                                 <div className='d-flex justify-content-end mt-4 mb-3'>
                                     <div>
-                                        <button className='btn btn-primary text-white me-3 px-3'>Update</button>
-                                        <button className='btn btn-danger  px-3'>Delete</button>
+                                        <button onClick={()=>handleUpdate(_id)} className='btn btn-primary text-white me-3 px-3'>Update</button>
+                                        <button onClick={()=>hanleDelete(_id)}  className='btn btn-danger  px-3'>Delete</button>
                                     </div>
                                 </div>
                             </Card.Body>
