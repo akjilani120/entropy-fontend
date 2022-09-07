@@ -11,10 +11,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Home.css'
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import Banner from './Component/Banner';
+import PostBlog from './PostBlog';
 const Home = () => {
     const [keyword, setKeyword] = useState('')
     const [data, setData] = useState([])
-    const [searchItem, setSearchItem] = useState([])    
+    const [searchItem, setSearchItem] = useState([])
     const [blog, setBlog] = useState("")
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
 
@@ -95,7 +96,7 @@ const Home = () => {
     const handleShow = () => setShow(true);
     return (
         <div>
-            <Banner/>
+            <Banner />
             <div className='d-flex justify-content-end'>
 
                 <div>
@@ -141,10 +142,10 @@ const Home = () => {
                     </Modal>
                 </div>
             </div>
-            <div className='container'>                 
+            <div className='container'>
                 <div class="input-group input-group-head mb-3 text-center mx-4 ">
                     <span class="input-group-text bg-primary text-white " id="basic-addon3">Search</span>
-                    <input  onChange={(e) => setKeyword(e.target.value)} type="text" className="form-control search-input" id="basic-url" aria-describedby="basic-addon3" placeholder='Search your favourite blog' />
+                    <input onChange={(e) => setKeyword(e.target.value)} type="text" className="form-control search-input" id="basic-url" aria-describedby="basic-addon3" placeholder='Search your favourite blog' />
                 </div>
             </div>
             {searchItem.length > 0 ? <>
@@ -182,7 +183,11 @@ const Home = () => {
                     <div className='pb-5'>
                         <Outlet />
                     </div></>}
-            <ToastContainer />
+
+            <div className='d-flex justify-content-center'>
+                <PostBlog  />
+            </div>
+            
         </div>
     );
 };

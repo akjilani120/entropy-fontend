@@ -9,8 +9,7 @@ const CardRow = ({singleData , refetch }) => {
         method:"DELETE"
      })
      .then(res => res.json())
-     .then(data =>{
-         
+     .then(data =>{         
          refetch()
         })
      
