@@ -179,7 +179,7 @@ const Home = () => {
                             </ul>
                         </div>
                     </div>
-                    <div>
+                    <div className='pb-5'>
                         <Outlet />
                     </div></>}
             <ToastContainer />

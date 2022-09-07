@@ -14,7 +14,7 @@ const Tech = () => {
     return (
         <div>
              <Container>
-           <Row xs={1} md={2} lg={4} className="g-4">
+           <Row xs={1} md={2} lg={3} className="g-4">
                {
                 data.map(singleData => <CardRow singleData={singleData} key={singleData._id} /> )
                }

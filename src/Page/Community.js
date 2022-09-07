@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import CardRow from './CardRow';
 const Community = () => {
@@ -14,7 +12,7 @@ const Community = () => {
     return (
         <div>
              <Container>
-           <Row xs={1} md={2} lg={4} className="g-4">
+           <Row xs={1} md={2} lg={3} className="g-4">
                {
                 data.map(singleData => <CardRow singleData={singleData} key={singleData._id}/>)
                }
