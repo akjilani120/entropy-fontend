@@ -2,6 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import Community from './Page/Community';
+import Navabar from './Page/Component/Navabar';
 import Entertainment from './Page/Entertainment';
 import Home from './Page/Home';
 import Tech from './Page/Tech';
@@ -9,6 +10,7 @@ import Tech from './Page/Tech';
 function App() {
   return (
     <div className="App">
+     <Navabar/>
      <Routes>
      <Route path='/' element={<Home/>}>
       <Route index element={<Tech/>}></Route>

@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import './Home.css'
 import { Card, Col, Container, Row } from 'react-bootstrap';
+import Banner from './Component/Banner';
 const Home = () => {
     const [keyword, setKeyword] = useState('')
     const [data, setData] = useState([])
@@ -19,7 +20,7 @@ const Home = () => {
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
 
     useEffect(() => {
-        fetch('https://infinite-falls-36458.herokuapp.com/blog/all')
+        fetch('http://localhost:5000/blog/all')
             .then(res => res.json())
             .then(result => setData(result))
     }, [])
@@ -66,7 +67,7 @@ const Home = () => {
                         title,
                         img
                     }
-                    fetch('https://infinite-falls-36458.herokuapp.com/blog', {
+                    fetch('http://localhost:5000/blog', {
                         method: "POST",
                         headers: {
                             "content-type": "application/json"
@@ -96,6 +97,7 @@ const Home = () => {
     const handleShow = () => setShow(true);
     return (
         <div>
+            <Banner/>
             <div className='d-flex justify-content-end'>
 
                 <div>

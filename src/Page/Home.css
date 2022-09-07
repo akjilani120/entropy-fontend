@@ -16,3 +16,32 @@
 .blog-modal-body{
     background-color: rgb(6, 6, 49);
 }
+/* Banner part start */
+.banner-main{
+    position: relative;
+    width: 100%;
+   
+}
+.navbar-header{
+   
+    width: 100%;
+}
+.video-banner{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+
+}
+.banner-title{
+    position: absolute;
+    top: 24%;
+    left: 18%;
+    
+}
+.banner-title-pera span{
+ color: white;
+ margin: 0 10px ;
+ border-right: 1px solid rgb(201, 198, 198);
+ padding: 0 10px;
+}
+/* Banner part over */

@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 const Entertainment = () => {
     const [data, setData] = useState([])
     useEffect(() => {
-        fetch("https://infinite-falls-36458.herokuapp.com/blog?blogType=Entertainment")
+        fetch("http://localhost:5000/blog?blogType=Entertainment")
             .then(res => res.json())
             .then(data => setData(data))
     }, [])

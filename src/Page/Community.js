@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 const Community = () => {
     const [data, setData] = useState([])
     useEffect(() => {
-        fetch("https://infinite-falls-36458.herokuapp.com/blog?blogType=Community")
+        fetch("http://localhost:5000/blog?blogType=Community")
             .then(res => res.json())
             .then(data => setData(data))
     }, [])
