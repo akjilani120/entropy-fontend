@@ -14,8 +14,7 @@ import Banner from './Component/Banner';
 const Home = () => {
     const [keyword, setKeyword] = useState('')
     const [data, setData] = useState([])
-    const [searchItem, setSearchItem] = useState([])
-    console.log(keyword);
+    const [searchItem, setSearchItem] = useState([])    
     const [blog, setBlog] = useState("")
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
 
@@ -44,7 +43,6 @@ const Home = () => {
     }
     const imgStorageKey = 'a20408031904de293b263e5a8f8e5393'
     const onSubmit = data => {
-
         const formData = new FormData();
         const image = data.img[0]
         formData.append('image', image);
@@ -143,11 +141,10 @@ const Home = () => {
                     </Modal>
                 </div>
             </div>
-            <div>
-                 
-                <div class="input-group mb-3 w-25 mx-4">
+            <div className='container'>                 
+                <div class="input-group input-group-head mb-3 text-center mx-4 ">
                     <span class="input-group-text bg-primary text-white " id="basic-addon3">Search</span>
-                    <input onChange={(e) => setKeyword(e.target.value)} type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"/>
+                    <input  onChange={(e) => setKeyword(e.target.value)} type="text" className="form-control search-input" id="basic-url" aria-describedby="basic-addon3" placeholder='Search your favourite blog' />
                 </div>
             </div>
             {searchItem.length > 0 ? <>

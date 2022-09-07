@@ -16,15 +16,23 @@
 .blog-modal-body{
     background-color: rgb(6, 6, 49);
 }
+.search-input{
+    height: 48px;
+    width: 200px;
+    border: 1px solid rgb(6, 6, 49);
+}
+.input-group-head{
+    width: 30%;
+    
+}
 /* Banner part start */
 .banner-main{
     position: relative;
     width: 100%;
    
 }
-.navbar-header{
-   
-    width: 100%;
+.navbar-header{   
+  
 }
 .video-banner{
     width: 100%;
