@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { ToastContainer, toast } from 'react-toastify';
-const PostBlog = () => {
+const PostBlog = ({reload, setReload}) => {
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
-    const [blog, setBlog] = useState("")
+    const [blog, setBlog] = useState("Tech")
     const handleSelect = (e) => {
         setBlog(e.target.value)
     }
@@ -42,13 +42,13 @@ const PostBlog = () => {
                         .then(data => {
                             if (data) {
                                 toast("Success , Send your data")
+                                setReload(!reload)
 
                             } else {
                                 toast("not success ,donot Send your data")
                             }
-                            console.log("set data data", data)
+                            
                             reset()
-
                         })
                 }
             }

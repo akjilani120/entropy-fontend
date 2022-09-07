@@ -12,8 +12,9 @@ import './Home.css'
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import Banner from './Component/Banner';
 import PostBlog from './PostBlog';
-const Home = () => {
+const Home = ({setReload,reload}) => {
     const [keyword, setKeyword] = useState('')
+    const [isLoading, setIsLoading] = useState(true)
     const [data, setData] = useState([])
     const [searchItem, setSearchItem] = useState([])
     const [blog, setBlog] = useState("")
@@ -22,8 +23,11 @@ const Home = () => {
     useEffect(() => {
         fetch('http://localhost:5000/blog/all')
             .then(res => res.json())
-            .then(result => setData(result))
-    }, [])
+            .then(result => {
+                setData(result)
+              setIsLoading(false)
+            })
+    }, [isLoading])
 
     useEffect(() => {
         if (keyword) {
@@ -36,7 +40,7 @@ const Home = () => {
         }
     }, [keyword])
 
-    console.log(searchItem);
+    
 
 
     const handleSelect = (e) => {
@@ -185,7 +189,9 @@ const Home = () => {
                     </div></>}
 
             <div className='d-flex justify-content-center'>
-                <PostBlog  />
+                <PostBlog 
+                setReload={setReload}
+                reload={reload}  />
             </div>
             
         </div>

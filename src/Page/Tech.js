@@ -4,24 +4,22 @@ import { useQuery } from 'react-query'
 import Row from 'react-bootstrap/Row';
 import CardRow from './CardRow';
 
-const Tech = () => {
+const Tech = ({reload, setReload}) => {
     const url =`http://localhost:5000/blog?blogType=Tech`
-    const { isLoading, error, data , refetch  } = useQuery('repoData', () =>
-    fetch(url).then(res =>
-      res.json()
-    )
-  )
-
-  if (isLoading) return 'Loading...'
-
-  if (error) return 'An error has occurred: ' + error.message
+    const [data, setData]= useState([])
+  useEffect(()=>{
+    fetch(url)
+    .then(res=> res.json())
+    .then(data=> setData(data))
+  },[reload])
+console.log("tech data" , data)
 
     return (
         <div>
              <Container>
            <Row xs={1} md={2} lg={3} className="g-4">
                {
-                data.map(singleData => <CardRow refetch={refetch} singleData={singleData} key={singleData._id} /> )
+                data.map(singleData => <CardRow setReload={setReload} reload={reload} singleData={singleData} key={singleData._id} /> )
                }
             </Row>
            </Container>

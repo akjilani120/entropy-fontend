@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
-const CardRow = ({singleData , refetch }) => {
+const CardRow = ({singleData , refetch, reload, setReload }) => {
     const {name , img , title , blogType , _id} = singleData
    const hanleDelete =(id) =>{
     const url =`http://localhost:5000/blog/delete/${id}`
@@ -10,6 +10,7 @@ const CardRow = ({singleData , refetch }) => {
      })
      .then(res => res.json())
      .then(data =>{         
+         setReload(!reload)
          refetch()
         })
      
