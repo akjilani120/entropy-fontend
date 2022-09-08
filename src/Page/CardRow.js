@@ -16,9 +16,8 @@ const CardRow = ({singleData , refetch, reload, setReload }) => {
         method:"DELETE"
      })
      .then(res => res.json())
-     .then(data =>{         
+     .then(data =>{ 
          setReload(!reload)
-         refetch()
         })
      
    }
@@ -64,7 +63,7 @@ const onSubmit = (data ) => {
                         } else {
                             toast("not success ,donot update ")
                         }
-                        refetch()
+                        
                         reset()
 
                     })

@@ -22,8 +22,8 @@ function App() {
      reload={reload}
      />}>
       <Route index element={<Tech reload={reload } setReload={setReload} />}></Route>
-      <Route path='entertainment' element={<Entertainment/>}></Route>
-      <Route path='community' element={<Community/>}></Route>
+      <Route path='entertainment' element={<Entertainment reload={reload } setReload={setReload}/>}></Route>
+      <Route path='community' element={<Community reload={reload } setReload={setReload}/>}></Route>
      </Route>
      
      </Routes>
