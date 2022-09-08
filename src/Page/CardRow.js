@@ -59,12 +59,12 @@ const onSubmit = (data ) => {
                         if (data) {
                             toast("Success , Your data is update")
                             setReload(!reload)
-                            refetch()
+                            
                             
                         } else {
                             toast("not success ,donot update ")
                         }
-                        
+                        refetch()
                         reset()
 
                     })
