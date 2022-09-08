@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Community from './Page/Community';
+import Footer from './Page/Component/Footer';
 import Navabar from './Page/Component/Navabar';
 import Entertainment from './Page/Entertainment';
 import Home from './Page/Home';
@@ -26,6 +27,7 @@ function App() {
      </Route>
      
      </Routes>
+     <Footer/>
     </div>
   );
 }

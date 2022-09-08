@@ -104,7 +104,7 @@ const Home = ({setReload,reload}) => {
                 
             </div>
             <div className='container'>
-                <div class="input-group input-group-head mb-3 text-center mx-4 ">
+                <div class="input-group input-group-head mb-3 text-center mx-4 mt-4">
                     <span class="input-group-text bg-primary text-white " id="basic-addon3">Search</span>
                     <input onChange={(e) => setKeyword(e.target.value)} type="text" className="form-control search-input" id="basic-url" aria-describedby="basic-addon3" placeholder='Search your favourite blog' />
                 </div>

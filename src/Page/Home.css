@@ -62,3 +62,22 @@
     width: 60%;
 }
 /* Post Body over */
+/* Footer start */
+.footer-items{
+    margin-top: 50px;
+}
+.footer-items ul{
+    padding: 0;
+    margin: 0;
+}
+.footer-items ul li{
+    list-style: none;
+    color: rgb(104, 97, 97);
+    margin-top: 10px;
+}
+/* Footer over */
+@media screen and (max-width: 768px) {
+    .input-group-head{
+        width: 70%;
+    }
+}

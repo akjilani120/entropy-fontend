@@ -1,11 +1,11 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 function Navabar() {
   return (
-    <Navbar className='navbar-header w-100' bg="" fixed='top' variant="dark" expand="lg">
+    <Navbar className='navbar-header w-100' bg="dark" fixed='top' variant="dark" expand="lg">
       <Container>
         <Navbar.Brand href="#home">Vaani Techlabs </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
