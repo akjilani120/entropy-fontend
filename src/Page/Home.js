@@ -95,56 +95,13 @@ const Home = ({setReload,reload}) => {
 
 
     };
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+   
     return (
         <div>
             <Banner />
             <div className='d-flex justify-content-end'>
 
-                <div>
-                    <Button className='mx-5 my-3 px-5 lead py-2' variant="primary" onClick={handleShow}>
-                        Add Blog
-                    </Button>
-
-                    <Modal show={show} onHide={handleClose}>
-                        <Modal.Header closeButton>
-                            <Modal.Title> Add Blog</Modal.Title>
-                        </Modal.Header>
-                        <Modal.Body className='blog-modal-body'>
-                            <form onSubmit={handleSubmit(onSubmit)}>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" className="form-label text-white">Select Blog</label>
-                                    <select onChange={handleSelect} className='form-select' required>
-                                        <option value="Tech">Tech</option>
-                                        <option value="Entertainment">Entertainment</option>
-                                        <option value="Community">Community</option>
-                                    </select>
-
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" className="form-label text-white">Name</label>
-                                    <input type="text" className='form-control' {...register("name")} required />
-                                    <p className='text-danger'> {errors.name?.type === 'required' && "First name is required"}</p>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleFormControlInput1" className="form-label text-white">About Text</label>
-                                    <input type="text" className='form-control' {...register("title")} required />
-                                    <p className='text-danger'> {errors.title?.type === 'required' && "First name is required"}</p>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="exampleInputEmail1" className="form-label text-white">Image</label>
-                                    <input className='form-control' type='file' {...register("img")} required />
-                                </div>
-
-                                <div className='text-center'>
-                                    <input className='btn btn-warning my-3 text-white px-4 py-2' type="submit" value="Submit now" />
-                                </div>
-                            </form>
-                        </Modal.Body>
-                    </Modal>
-                </div>
+                
             </div>
             <div className='container'>
                 <div class="input-group input-group-head mb-3 text-center mx-4 ">
@@ -188,7 +145,7 @@ const Home = ({setReload,reload}) => {
                         <Outlet />
                     </div></>}
 
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center post-main'>
                 <PostBlog 
                 setReload={setReload}
                 reload={reload}  />

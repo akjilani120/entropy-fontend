@@ -58,7 +58,7 @@ const PostBlog = ({reload, setReload}) => {
     };
     return (
         <div className='post-body'>
-                    <h1>Add Blog</h1>
+                    <h1 className='text-center text-white my-3'>Add Blog</h1>
                     <div>
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <div class="mb-3">

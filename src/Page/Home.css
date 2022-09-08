@@ -53,4 +53,12 @@
  padding: 0 10px;
 }
 /* Banner part over */
-/* Post Body */
+/* Post Body start */
+.post-main{
+    background-color: rgb(64, 98, 123);
+    padding: 30px 10px;
+}
+.post-body{
+    width: 60%;
+}
+/* Post Body over */
