@@ -5,14 +5,13 @@ import Col from 'react-bootstrap/Col';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 const CardRow = ({singleData , refetch, reload, setReload }) => {
-    const {name , img , title , blogType , _id} = singleData
-    const [blog, setBlog] = useState("")
+    const {name , img , title , blogType , _id} = singleData   
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
    const hanleDelete =(id) =>{
-    const url =`http://localhost:5000/blog/delete/${id}`
+    const url =`https://afternoon-bayou-41117.herokuapp.com/blog/delete/${id}`
      fetch(url , {
         method:"DELETE"
      })
@@ -23,12 +22,7 @@ const CardRow = ({singleData , refetch, reload, setReload }) => {
         })
      
    }
-   const handleUpdate =(id) =>{
-     console.log("Update" , id)
-   }
-   const handleSelect = (e) => {
-    setBlog(e.target.value)
-}
+
 const imgStorageKey = 'a20408031904de293b263e5a8f8e5393'
 const onSubmit = (data ) => {
     console.log("update id" , _id)
@@ -43,19 +37,18 @@ const onSubmit = (data ) => {
         .then(res => res.json())
 
         .then(result => {
-            if (result.success) {
-                const blogType = blog
+            if (result.success) {             
                 const name = data.name;
                 const title = data.title
                 const img = result.data.url
                 const totalData = {
-                    blogType,
+                   
                     name,
                     title,
                     img
                 }
-                fetch('http://localhost:5000/', {
-                    method: "POST",
+                fetch(`https://afternoon-bayou-41117.herokuapp.com/blog/update/${_id}`, {
+                    method: "PUT",
                     headers: {
                         "content-type": "application/json"
                     },
@@ -64,12 +57,14 @@ const onSubmit = (data ) => {
                     .then(res => res.json())
                     .then(data => {
                         if (data) {
-                            toast("Success , Send your data")
-
+                            toast("Success , Your data is update")
+                            setReload(!reload)
+                            refetch()
+                            
                         } else {
-                            toast("not success ,donot Send your data")
+                            toast("not success ,donot update ")
                         }
-                        console.log("set data data", data)
+                        
                         reset()
 
                     })
@@ -107,12 +102,8 @@ const onSubmit = (data ) => {
                         <Modal.Body className='blog-modal-body'>
                             <form onSubmit={handleSubmit(onSubmit)}>
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" className="form-label text-white">Select Blog</label>
-                                    <select onChange={handleSelect} className='form-select' required>
-                                        <option value="Tech">Tech</option>
-                                        <option value="Entertainment">Entertainment</option>
-                                        <option value="Community">Community</option>
-                                    </select>
+                                <label for="exampleFormControlInput1" className="form-label text-white">Blog</label>
+                                <input type="text" value={blogType} className='form-control' readOnly />
 
                                 </div>
                                 <div class="mb-3">

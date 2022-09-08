@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import CardRow from './CardRow';
 import { useQuery } from 'react-query'
 const Community = () => {
-    const url =`http://localhost:5000/blog?blogType=Community`
+    const url =`https://afternoon-bayou-41117.herokuapp.com/blog?blogType=Community`
     const { isLoading, error, data, refetch } = useQuery('repoData', () =>
     fetch(url).then(res =>
       res.json()

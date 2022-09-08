@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import CardRow from './CardRow';
 
 const Tech = ({reload, setReload}) => {
-    const url =`http://localhost:5000/blog?blogType=Tech`
+    const url =`https://afternoon-bayou-41117.herokuapp.com/blog?blogType=Tech`
     const [data, setData]= useState([])
   useEffect(()=>{
     fetch(url)

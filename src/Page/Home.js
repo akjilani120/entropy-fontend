@@ -21,7 +21,7 @@ const Home = ({setReload,reload}) => {
     const { register, reset, handleSubmit, formState: { errors } } = useForm();
 
     useEffect(() => {
-        fetch('http://localhost:5000/blog/all')
+        fetch('https://afternoon-bayou-41117.herokuapp.com/blog/all')
             .then(res => res.json())
             .then(result => {
                 setData(result)
@@ -70,7 +70,7 @@ const Home = ({setReload,reload}) => {
                         title,
                         img
                     }
-                    fetch('http://localhost:5000/blog', {
+                    fetch('https://afternoon-bayou-41117.herokuapp.com/blog', {
                         method: "POST",
                         headers: {
                             "content-type": "application/json"

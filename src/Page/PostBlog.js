@@ -31,7 +31,7 @@ const PostBlog = ({reload, setReload}) => {
                         title,
                         img
                     }
-                    fetch('http://localhost:5000/blog', {
+                    fetch('https://afternoon-bayou-41117.herokuapp.com/blog', {
                         method: "POST",
                         headers: {
                             "content-type": "application/json"

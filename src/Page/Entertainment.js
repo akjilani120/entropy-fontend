@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import CardRow from './CardRow';
 const Entertainment = () => {
-    const url =`http://localhost:5000/blog?blogType=Entertainment`
+    const url =`https://afternoon-bayou-41117.herokuapp.com/blog?blogType=Entertainment`
     const { isLoading, error, data , refetch } = useQuery('repoData', () =>
     fetch(url).then(res =>
       res.json()
