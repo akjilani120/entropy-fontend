@@ -96,24 +96,43 @@
     font-size: 18px;
 }
 .Card-items{
-    height: 550px;
+    height: 600px;
     position: relative;
 }
 .Card-items:hover{
     box-shadow: 0px 10px 15px silver;
-    cursor: pointer;
+    
 }
 .card-img-overflow-price{
     position: absolute;
     bottom: 40%;
     left: 10px;
+   
+    
 }
+
 .card-price p{
-    background-color: rgba(151, 141, 3, 0.637);
+    background-color: rgba(151, 141, 3, 0.733);
     color: white;
     padding: 5px;
     font-size: 18px;
     border-radius: 8px;
+}
+.more-btn{
+    display: block;
+    border: 2px solid rgba(151, 141, 3, 0.733) ;
+    padding: 8px;
+   font-size: 18px;
+    margin: 10px;
+    color:rgba(151, 141, 3, 0.733)  ;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Card-items:hover .more-btn{
+    background-color:rgba(151, 141, 3, 0.733) ;
+    color: white;
+    
 }
 /* Real Estate over */
 @media screen and (max-width: 768px) {

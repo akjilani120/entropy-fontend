@@ -1,8 +1,14 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
+import { useNavigate } from 'react-router-dom';
 const CardEstate = ({data}) => {
-    const {img ,imgType, NamePropaty, description, Price , betroom} = data
+    const navigate = useNavigate()
+    const {img ,imgType, NamePropaty, description, Price , betroom, id} = data
+    const hanldeNavigate =(id) =>{
+        navigate(`/singleEstate/${id}`)
+        
+    }
     return (
         <Col>
           <Card className='Card-items'>
@@ -23,7 +29,11 @@ const CardEstate = ({data}) => {
               <Card.Text className="estate-descrip"> <b>Description :</b>  
                {description.slice(0, 70)}
               </Card.Text>
+              
             </Card.Body>
+            <div className="more-head text-center">
+                <p onClick={()=>hanldeNavigate(id)} className='more-btn'>About More</p>
+            </div>
           </Card>
         </Col>
     );
