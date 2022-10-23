@@ -10,8 +10,8 @@ const EstateHouse = () => {
     return (
         <div>
            <div className="container">
-           <h1 className='text-center text-primary my-5 display-1'>Real Estate</h1>
-            <Row xs={1} md={3} className="g-4">
+           <h1 className='text-center text-primary my-5 display-2'>Real Estate</h1>
+            <Row xs={1} md={2} lg={3} className="g-4">
             {
                 datas.map(data  => <CardEstate data={data} key={data.id}/> )
             }

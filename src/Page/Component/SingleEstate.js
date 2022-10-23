@@ -27,7 +27,7 @@ const SingleEstate = () => {
     }}>
         <div className='pt-md-5 pt-3'>
             <h1 className='text-center text-white'>Real Estate Details Show</h1>
-             <h2 className='text-center text-white mt-3'> <Link className='navigate-home' to="/">Home</Link> / Details Show </h2>
+             <h2 className='text-center text-white mt-3'> <Link className='navigate-home' to="/">Home</Link> / {single.NamePropaty} </h2>
         </div>
 
     </div>
@@ -43,7 +43,19 @@ const SingleEstate = () => {
                 </div>
                 <div className="col-md-6">
                     <div className="about-details">
-
+                    <p className='etate-pera mt-3'> <b>Estate Type :</b> <span>{single.imgType}</span></p>
+              <p className='etate-pera mt-3'> <b>Estate Name :</b> <span className='estate-name'>{single.NamePropaty}</span></p>
+              <p className="estate-descrip mt-3"> <b>Description :</b>  
+               {single.description}
+              </p>
+              <div className=''>
+                <div className="card-price">
+                   <p> <b>Price :</b> ${single.Price}</p>
+                </div>
+                <div className="card-price ">
+                <p><b>Bed Room :</b> { single.betroom}</p>
+                </div>
+            </div>
                     </div>
                 </div>
             </div>

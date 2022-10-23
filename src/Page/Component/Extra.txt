@@ -1,0 +1,51 @@
+ {/* <div className='d-flex justify-content-end'>
+
+                
+            </div>
+            <div className='container'>
+                <div class="input-group input-group-head mb-3 text-center mx-4 mt-4">
+                    <span class="input-group-text bg-primary text-white " id="basic-addon3">Search</span>
+                    <input onChange={(e) => setKeyword(e.target.value)} type="text" className="form-control search-input" id="basic-url" aria-describedby="basic-addon3" placeholder='Search your favourite blog' />
+                </div>
+            </div>
+            {searchItem.length > 0 ? <>
+                <Container>
+                    <Row xs={1} md={2} lg={4} className="g-4">
+                        {
+                            searchItem.map(d => <Col>
+                                <Card>
+                                    <Card.Img className='img-card' variant="top" src={d.img} />
+                                    <Card.Body>
+                                        <Card.Title>{d.name}</Card.Title>
+                                        <Card.Text className='text-justify'>
+                                            {d.title.slice(0, 100)}
+                                        </Card.Text>
+                                        <button className='btn btn-primary my-2'>Show more</button>
+                                    </Card.Body>
+
+                                </Card>
+
+                            </Col>)
+                        }
+                    </Row>
+                </Container>
+            </> :
+                <>
+                    <div>
+                        <div className='d-flex justify-content-center'>
+                            <ul className='d-flex sub-nav'>
+                                <li> <CustomLink className="link-item" to="/">Tech</CustomLink> </li>
+                                <li> <CustomLink className="link-item" to="/entertainment">Entertainment</CustomLink> </li>
+                                <li> <CustomLink className="link-item" to="/community">Community</CustomLink> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className='pb-5'>
+                        <Outlet />
+                    </div></>}
+
+            <div className='d-flex justify-content-center post-main'>
+                <PostBlog 
+                setReload={setReload}
+                reload={reload}  />
+            </div> */}

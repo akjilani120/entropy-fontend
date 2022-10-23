@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../video/Screenshot.png'
 const Footer = () => {
     return (
-        <div className='py-4'>
+        <div className='py-4 footer-main'>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5">

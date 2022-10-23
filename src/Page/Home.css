@@ -1,3 +1,6 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
 .sub-nav {
    margin:30px auto ;
 }
@@ -135,7 +138,7 @@
     
 }
 .navigate-home{
-    color: skyblue;
+    color: rgb(9, 107, 146);
     text-decoration: none;
     font-weight: 900;
     
@@ -168,9 +171,34 @@
     padding-bottom: 20px;
     border-bottom: 3px dotted skyblue;
 }
+.about-details .estate-descrip{
+    line-height: 25px;
+}
+.link-home{
+    text-decoration: none;
+    color: white;
+}
+.footer-main{
+    margin-top: 30px;
+    background-color: rgba(111, 207, 245, 0.61);
+}
 /* Real Estate single page over */
 @media screen and (max-width: 768px) {
     .input-group-head{
         width: 70%;
     }
+    .banner-title{
+        padding: 20% 3%;
+    }
+    
+    .card-img-overflow-price{
+        bottom: 50%;
+    }
+}
+@media screen and (max-width: 480px) {
+   
+    .Card-items{
+       height: 650px;
+    }
+   
 }
