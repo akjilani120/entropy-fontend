@@ -1,18 +1,55 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-
+import { useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
 const SingleEstate = () => {
     const [datas , setDatas] = useState([])
-    const {id} = useParams()    
-    
-    fetch("ReatEstate.json")
-    .then(res => res.json())
-    .then(data => console.log(data))
- 
+    const [single , setSingle] = useState({})
+    const {id} = useParams()        
+    useEffect(() =>{
+        fetch("https://raw.githubusercontent.com/akjilani120/entropy-fontend/main/public/ReatEstate.json")
+        .then(res => res.json())
+        .then(data => setDatas(data))
+        
+    },[])
+    useEffect(() =>{
+        
+       if(datas.length > 0){
+        const mainData = datas.find(data => data.id == id) 
+        setSingle(mainData)
+       }
+    } ,[datas, id])
     return (
         <div className='pt-5'>
-           <h1>My id{id}</h1>
-            <h1 className='mt-5'>I am single Estate</h1>
+            <div className='single-Banner d-flex justify-content-center' style={{ 
+      backgroundImage: `url("https://img.freepik.com/premium-photo/3d-rendering-large-modern-contemporary-house-wood-concrete-early-evening_190619-1492.jpg?w=826")` 
+    }}>
+        <div className='pt-md-5 pt-3'>
+            <h1 className='text-center text-white'>Real Estate Details Show</h1>
+             <h2 className='text-center text-white mt-3'> <Link className='navigate-home' to="/">Home</Link> / Details Show </h2>
+        </div>
+
+    </div>
+           <div className='my-5 estate-single-main'>
+           <div className="container">
+            <div className="row">
+                <div className="col-md-6">
+                    <div className="img-part">
+                      <img className='single-main-img' src={single.img} alt="images" />
+                     <img className='thumber-img' src={single.img} alt="images" />
+                    </div>
+
+                </div>
+                <div className="col-md-6">
+                    <div className="about-details">
+
+                    </div>
+                </div>
+            </div>
+           </div>
+        
+           </div>
         </div>
     );
 };

@@ -4,7 +4,7 @@ import CardEstate from './CardEstate';
 import Row from 'react-bootstrap/Row';
 const EstateHouse = () => {
     const [datas , setDatas] = useState([])
-    fetch("ReatEstate.json")
+    fetch("https://raw.githubusercontent.com/akjilani120/entropy-fontend/main/public/ReatEstate.json")
     .then(res => res.json())
     .then(data => setDatas(data))
     return (
