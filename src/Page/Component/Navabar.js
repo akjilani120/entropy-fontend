@@ -7,7 +7,7 @@ function Navabar() {
   return (
     <Navbar className='navbar-header w-100' bg="dark" fixed='top' variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Vaani Techlabs </Navbar.Brand>
+        <Navbar.Brand href="#home">Ak Jilani</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

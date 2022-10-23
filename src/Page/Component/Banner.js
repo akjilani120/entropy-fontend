@@ -6,7 +6,7 @@ const Banner = () => {
            <div className='banner-main'>
            <video loop autoPlay muted className='video-banner'>
                 <source
-                    src="https://player.vimeo.com/external/524798492.sd.mp4?s=adec0bcd7c5fedd2e9360bab97eab892468113ec&profile_id=164&oauth2_token_id=57447761"
+                    src="https://player.vimeo.com/external/392612459.sd.mp4?s=39589128d7c98ba18e262569fc7a5a6d31d89e22&profile_id=164&oauth2_token_id=57447761"
                     type="video/mp4"
                 />
                 

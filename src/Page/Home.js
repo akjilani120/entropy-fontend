@@ -12,6 +12,7 @@ import './Home.css'
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import Banner from './Component/Banner';
 import PostBlog from './PostBlog';
+import EstateHouse from './Component/EstateHouse';
 const Home = ({setReload,reload}) => {
     const [keyword, setKeyword] = useState('')
     const [isLoading, setIsLoading] = useState(true)
@@ -99,6 +100,7 @@ const Home = ({setReload,reload}) => {
     return (
         <div>
             <Banner />
+            <EstateHouse/>
             <div className='d-flex justify-content-end'>
 
                 

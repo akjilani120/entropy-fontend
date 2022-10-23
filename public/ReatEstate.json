@@ -1,0 +1,85 @@
+[
+    {   "id":1,
+        "img":"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "imgType" :"Apartment",
+        "NamePropaty" :"Light ANd Morder Apartment",
+        "description" :"This is best looking Apartment.The apartment have 4 doors , 3 bithroom, . The apartemnt  have 4 rooms.The apparment have 2 checking room. The apartment aside have more nuture beatiful forest. ",
+        "Price" : 150000,
+        "betroom": 4
+       
+    },
+    {   "id":2,
+        "img":"https://images.unsplash.com/photo-1592595896551-12b371d546d5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "imgType" :"Apartment",
+        "NamePropaty" :"Design Apartment",
+        "description" :"This is best looking Apartment.The apartment have 5 doors , 3 bithroom, . The apartemnt  have34 rooms.The apparment have 6 kitch room. The apartment aside have more nuture beatiful forest.",
+        "Price" : 362500,
+        "betroom": 3
+       
+    },
+    {   "id":3,
+        "img":"https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cmVhbCUyMGVzdGF0ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+        "imgType" :"Apartment",
+        "NamePropaty" :"New Apartment",
+        "description" :"This is best looking Apartment.The apartment have 5 doors , 3 bithroom, . The apartemnt  have34 rooms.The apparment have 6 kitch room. The apartment aside have more nuture beatiful forest.",
+        "Price" : 85000,
+        "betroom": 7
+       
+    },
+    {   "id":4,
+        "img":"https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "imgType" :"Studio",
+        "NamePropaty" :"Renovated Studio",
+        "description" :"This is best looking Apartment.The apartment have 5 doors , 3 bithroom, . The apartemnt  have34 rooms.The apparment have 6 kitch room. The apartment aside have more nuture beatiful forest.",
+        "Price" : 758000,
+        "betroom": 4
+    },
+    {   "id":5,
+        "img":"https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "imgType" :"Studio",
+        "NamePropaty" :"New Apartment",
+        "description" :"his is best looking Apartment.The apartment have 5 doors , 3 bithroom, . The apartemnt  have34 rooms.The apparment have 6 kitch room. The apartment aside have more nuture beatiful forest.",
+        "Price" : 15476250,
+        "betroom": 4
+    },
+    {   "id":6,
+        "img":"https://images.unsplash.com/photo-1599809275671-b5942cabc7a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "imgType" :"Hotel",
+        "NamePropaty" :"New Start Holet",
+        "description" :"his is best looking Apartment.The apartment have 5 doors , 3 bithroom, . The apartemnt  have34 rooms.The apparment have 4 kitch room. The apartment aside have more nuture beatiful forest.",
+        "Price" : 5875400,
+        "betroom": 2
+    },
+    {   "id":7,
+        "img":"https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "imgType" :"House Building",
+        "NamePropaty" :"House Holet Office",
+        "description" :"his is best looking Apartment.The apartment have 5 doors , 3 bithroom, . The apartemnt  have34 rooms.The apparment have 4 kitch room. The apartment aside have more nuture beatiful forest.",
+        "Price" : 6985700,
+        "betroom": 3
+    },
+    {   "id":8,
+        "img":"https://images.unsplash.com/photo-1558036117-15d82a90b9b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "imgType" :"National House",
+        "NamePropaty" :"International  House",
+        "description" :"his is best looking Apartment.The apartment have 5 doors , 3 bithroom, . The apartemnt  have34 rooms.The apparment have 4 kitch room. The apartment aside have more nuture beatiful forest",
+        "Price" : 15476250,
+        "betroom": 4
+    },
+    {   "id":9,
+        "img":"https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "imgType" :"Apartment",
+        "NamePropaty" :"Awesome Real State",
+        "description" :"This is best looking Apartment.The apartment have 5 doors , 3 bithroom, . The apartemnt  have34 rooms.The apparment have 4 kitch room. The apartment aside have more nuture beatiful forest",
+        "Price" : 15476250,
+        "betroom": 4
+    },
+    {   "id":10,
+        "img":"https://images.unsplash.com/photo-1494526585095-c41746248156?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fHJlYWwlMjBlc3RhdGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+        "imgType" :" Apartment",
+        "NamePropaty" :"New Apartment",
+        "description" :"This is best looking Apartment.The apartment have 5 doors , 3 bithroom, . The apartemnt  have34 rooms.The apparment have 4 kitch room. The apartment aside have more nuture beatiful forest",
+        "Price" : 15476250,
+        "betroom": 8
+    }
+]
